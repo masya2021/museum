@@ -128,16 +128,13 @@ table {
 
 .menu-list{
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
     max-width: 720px;
     width: calc(100% - 20px);
     margin-left: 450px;
-    scroll-behavior: smooth;
 }
 
 .menu-item {
-	list-style: none;
 	cursor: pointer;
 }
 
@@ -280,10 +277,10 @@ table {
     color: #000000;
 }
 
-.card-name::after {
+.card-name::before {
     content: "";
     position: absolute;
-    width: 300px;
+    width: 150px;
     bottom: -9px;
     left: 0;
     right: 0;
@@ -291,6 +288,21 @@ table {
     background: #710707;
     border-radius: 0px;
 }
+
+
+.card-name:hover::after {
+    content: "";
+    position: absolute;
+    width: 440px;
+    bottom: -9px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #710707;
+    border-radius: 0px;
+    transition-duration: all .9ms;
+}
+
 
 .card-name:hover {
     color: #9D8665;
@@ -308,7 +320,7 @@ table {
 
 .panorama {
     margin-top: 10px;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 200;
     font-size: 18px;
@@ -618,7 +630,7 @@ table {
     border-radius: 2px;
 }
 
-..buy-now:hover {
+.buy-now:hover {
     background-color: #9D8665;
 }
 /*дополнить buy tickets*/
